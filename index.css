@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 10px;
+}
+#input-el{
+    height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+}
+#input-btn{
+    background-color: #5f9341;
+    font-weight: bolder;
+    color: aliceblue;
+    border: none;
+    margin-top: 10px;
+    height: 38px;
+    width: 150px;
+    cursor: pointer;
+}
