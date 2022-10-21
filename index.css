@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 10px;
 }
+@font-face {
+    font-family: 'swansea';
+    src: url(Swansea-q3pd.ttf);
+}
 #input-el{
     height: 38px;
     width: 100%;
@@ -17,4 +21,20 @@ body {
     height: 38px;
     width: 150px;
     cursor: pointer;
+    margin-bottom: 10px;
+}
+a{
+    color: #5f9341;
+}
+ul{
+    font-size: 17px;
+    font-family:swansea;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+
+    margin-top: 10px;
 }
