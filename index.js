@@ -6,8 +6,12 @@ inputBtn.addEventListener('click',()=>{
     const inputEl=document.getElementById("input-el")
     myLeads.push(inputEl.value)
     console.log(myLeads)
+    renderleads()
+})
+function renderleads()
+{
     const li = document.createElement("li")
     li.textContent = myLeads[i]
     ulEl.append(li)
     i++;
-})
+}
