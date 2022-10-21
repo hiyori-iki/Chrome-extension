@@ -16,7 +16,7 @@ inputBtn.addEventListener('click',()=>{
 function renderleads()
 {
     const li = document.createElement("li")
-    li.textContent = myLeads[i]
+    li.innerHTML =`<a href= '${myLeads[i]}' > ${myLeads[i]} </a>`
     ulEl.append(li)
     i++;
 }
