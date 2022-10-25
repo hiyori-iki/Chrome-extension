@@ -3,6 +3,8 @@ let i=0
 let isEmpty=true;
 const inputBtn=document.getElementById("input-btn")
 const ulEl=document.getElementById("ul-el")
+let leadsFromLocalstorage=JSON.parse(localStorage.getItem("myLeads", myLeads))
+console.log(leadsFromLocalstorage)
 inputBtn.addEventListener('click',()=>{
     const inputEl=document.getElementById("input-el")
     if(inputEl.value!='')
