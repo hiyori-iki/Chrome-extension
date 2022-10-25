@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
     border: 1px solid #5f9341;
 }
-#input-btn{
+button{
     background-color: #5f9341;
     font-weight: bolder;
     color: aliceblue;
@@ -23,6 +23,12 @@ body {
     width: 150px;
     cursor: pointer;
     margin-bottom: 10px;
+}
+#delete-btn{
+    background-color: aliceblue;
+    color:#5f9341;
+    border: 2px solid;
+    border-color: #5f9341;
 }
 a{
     color: #5f9341;

@@ -2,9 +2,17 @@ let myLeads=[]
 let i=0
 let isEmpty=true;
 const inputBtn=document.getElementById("input-btn")
+const deleteBtn=document.getElementById("delete-btn")
 const ulEl=document.getElementById("ul-el")
 let leadsFromLocalstorage=JSON.parse(localStorage.getItem("myLeads", myLeads))
 console.log(leadsFromLocalstorage)
+if (leadsFromLocalstorage) {
+    myLeads=leadsFromLocalstorage
+    for(let j=0;j<myLeads.length;j++)
+    {
+        renderleads()
+    } 
+}
 inputBtn.addEventListener('click',()=>{
     const inputEl=document.getElementById("input-el")
     if(inputEl.value!='')
@@ -15,6 +23,11 @@ inputBtn.addEventListener('click',()=>{
         renderleads()
     }
     inputEl.value=""
+})
+deleteBtn.addEventListener('click',()=>{
+    localStorage.clear();
+    ulEl.innerText=""
+    
 })
 function renderleads()
 {
