@@ -3,10 +3,6 @@ body {
     padding: 10px;
     min-width: 400px;
 }
-@font-face {
-    font-family: 'swansea';
-    src: url(Swansea-q3pd.ttf);
-}
 #input-el{
     height: 38px;
     width: 100%;
@@ -35,7 +31,7 @@ a{
 }
 ul{
     font-size: 17px;
-    font-family:swansea;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     list-style-type: none;
     margin: 0;
