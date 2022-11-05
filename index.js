@@ -7,7 +7,6 @@ const ulEl=document.getElementById("ul-el")
 const tabBtn=document.getElementById("tab-btn")
 const leadsFromLocalstorage=JSON.parse(localStorage.getItem("myLeads", myLeads))
 
-
 tabBtn.addEventListener('click',function(){
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         console.log(tabs[0].url);
